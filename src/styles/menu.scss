@@ -1,0 +1,15 @@
+
+nav a{
+    color: $text-default_color;
+    @include smooth-transition(color);
+    font-weight: $font-default_weight;
+    line-height: $font-default_line-height;
+    &:hover{
+        color: $text-default_color-hover;
+    }
+
+}
+nav .btn-demo{
+    @include button-primary;
+
+}
