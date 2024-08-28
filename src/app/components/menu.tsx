@@ -29,7 +29,7 @@ const MenuComponent: React.FC = () => {
         {/* Desktop Menu */}
         <nav className="hidden md:flex md:justify-center md:items-center space-x-10">
           {menuItems.map((item) => (
-            <Link key={item.key} href={`#${item.key}`}>
+            <Link key={item.key} className="menu-link" href={`#${item.key}`}>
               {item.label}
             </Link>
           ))}
