@@ -2,34 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './typography.scss';
-@import './colors.scss';
+@import "./typography.scss";
+@import "./colors.scss";
 @mixin smooth-transition($property: all, $duration: 0.3s, $timing: ease) {
   transition: $property $duration $timing;
 }
 @mixin button-primary {
   padding: 5px 20px 5px 20px;
   border-radius: 6px;
-  border:2px solid;
-  border-color:$text-default_color-hover ;
+  border: 2px solid;
+  border-color: $text-default_color-hover;
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
   cursor: pointer;
-  @include smooth-transition(background,0.4s);
-  background-color: white ;
-  color:$text-default_color;
-  &:hover{
+  @include smooth-transition(background, 0.4s);
+  background-color: white;
+  color: $text-default_color;
+  &:hover {
     color: white;
     background: $button-color_hover;
-    
   }
 }
 .container {
   max-width: 1200px;
 }
+//============ Animation
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
+.slide-in-left {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+.slide-in-top {
+  animation: slideInFromBottom 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes rotateAndFadeIn {
+  0% {
+    transform: rotate(-10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.rotate-fade-in {
+  animation: rotateAndFadeIn 1s ease-out forwards;
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-top {
+  animation: slideInFromTop 0.8s ease-out forwards;
+}
 
 //===========components css========
-@import './menu.scss';
+@import "./menu.scss";
