@@ -2,13 +2,13 @@
 import React from "react";
 import Link from "next/link";
 import SliderLogoLeft from "../../assets/image/sliderlogo.svg";
-
+import DetailIcon from "../../assets/image/detail.svg";
 const Slider: React.FC = () => {
   return (
-    <section className="mx-auto flex flex-col md:flex-row items-start py-12 px-4 md:px-8">
+    <section className="slider mx-auto flex flex-col md:flex-row items-start py-12 px-4 md:px-8">
       <div className="w-full md:w-1/3 mb-8 md:mb-0">
         <SliderLogoLeft className="logo-left slide-in-left" />
-        <div className="slider-content fade w-full pl-4 mx-auto">
+        <div className="slider-content w-full pl-4 mx-auto">
           <h2 className="text-3xl font-bold mt-6 mb-4">
             Comprehensive Protection Solution for Your System
           </h2>
@@ -18,11 +18,19 @@ const Slider: React.FC = () => {
             comprehensive protection for your endpoints and network systems.
           </h3>
           <div className="flex items-center">
-            <button className="bg-blue-500 text-white px-6 py-2 rounded-md mr-4 hover:bg-blue-600 transition duration-300">
-              Get Started
-            </button>
-            <Link href="#" className="text-blue-500 hover:underline">
-              Learn More
+            <button className="slider-button">Explore the product</button>
+            <div className="slider-button-detail ml-1">
+              <span> Or watch a </span>
+              <Link href={"#"} className="ml-2">
+                {" "}
+                full demo
+              </Link>
+            </div>
+          </div>
+          <div className="flex items-center mt-12 slider-footer">
+            <span> We were created for</span>
+            <Link href={"#"} className="hover:underline mr-3">
+              <DetailIcon />
             </Link>
           </div>
         </div>

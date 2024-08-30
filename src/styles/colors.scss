@@ -1,8 +1,9 @@
 //========Button colors============
-$button-border_color: #19CAFF;
-$button-color_hover:linear-gradient(88.5deg, #2693F5 -12.53%, #19CAFF 100.28%);
-
+$button-border_color: #19caff;
+$button-color_hover: linear-gradient(88.5deg, #2693f5 -12.53%, #19caff 100.28%);
+$button-secondary_color: #ffff;
 //========Text colors============
-$text-default_color: #2B2B32;
-$text-default_color-hover: #19CAFF;
-$text-secondary_color: #818798
+$text-default_color: #2b2b32;
+
+$text-default_color-hover: #19caff;
+$text-secondary_color: #818798;

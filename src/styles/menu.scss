@@ -47,9 +47,21 @@ nav .btn-demo {
   height: 100px !important;
   background-size: contain;
 }
+
+@keyframes slideInFromLeftCustom {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(278px);
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .slider-content {
-    transform: translateX(278px) !important;
+    animation: slideInFromLeftCustom 0.8s ease-out forwards;
   }
   .slider-container {
     background-image: url("/slide-background.png");
@@ -58,5 +70,18 @@ nav .btn-demo {
     object-fit: cover;
     background-repeat: no-repeat;
     width: 100%;
+  }
+}
+
+.slider-button {
+  @include button-secondary;
+  @include slider-button-hover;
+}
+.slider-button-detail {
+  span {
+    color: #2e3245;
+  }
+  a {
+    color: $text-default_color-hover;
   }
 }
