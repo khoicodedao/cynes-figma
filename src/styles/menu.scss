@@ -63,16 +63,24 @@ nav .btn-demo {
   .slider-content {
     animation: slideInFromLeftCustom 0.8s ease-out forwards;
   }
-  .slider-container {
-    background-image: url("/slide-background.png");
-    height: 700px;
-    background-size: cover;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-  }
 }
 
+@media screen and (max-width: 768px) {
+  .slider-container {
+    height: 911px !important;
+  }
+}
+.menu-drawer {
+  z-index: 99;
+}
+.slider-container {
+  background-image: url("/slide-background.png");
+  height: 700px;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
 .slider-button {
   @include button-secondary;
   @include slider-button-hover;

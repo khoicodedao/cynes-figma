@@ -62,7 +62,7 @@ const MenuComponent: React.FC = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed inset-y-0 right-0 w-64 bg-white shadow-lg transform ${
+        className={`menu-drawer fixed inset-y-0 right-0 w-64 bg-white shadow-lg transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
