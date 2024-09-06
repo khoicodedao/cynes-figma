@@ -13,6 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "slide-in-right": "slideInFromRight 0.8s ease-out forwards",
+        "slide-in-left": "slideInFromLeft 0.8s ease-out forwards",
+      },
     },
   },
   plugins: [],

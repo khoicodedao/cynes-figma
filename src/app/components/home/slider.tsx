@@ -10,7 +10,7 @@ const Slider: React.FC = () => {
       <div className="w-full md:w-1/3 mb-8 md:mb-0">
         <SliderLogoLeft className="hidden md:block logo-left slide-in-left" />
         <Image
-          className="block md:hidden logo-left slide-in-left"
+          className="block md:hidden logo-left slide-in-right  md:slide-in-left "
           alt="Cynes EDR"
           src={"/slide-logo-left-mobile.svg"}
           width={370}
