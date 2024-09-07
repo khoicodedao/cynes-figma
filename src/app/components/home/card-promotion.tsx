@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useIntersectionObserver } from "@/app/helper/custom-hook/intersection";
 import LeftImage from "@/app/assets/image/left.svg";
 import RightImage from "@/app/assets/image/right.svg";
+import BottomImage from "@/app/assets/image/bottom.svg";
 interface PromotionCard {
   Icon: string;
   title: string;
@@ -62,6 +63,9 @@ const CardPromotion: React.FC = () => {
       </div>
       <div className="absolute top-0 right-0 z-[-1]">
         <RightImage></RightImage>
+      </div>
+      <div className="absolute bottom-1/4 left-0 w-full h-full z-[-1]">
+        <BottomImage></BottomImage>
       </div>
       <div
         ref={ref as React.LegacyRef<HTMLDivElement> | undefined}
