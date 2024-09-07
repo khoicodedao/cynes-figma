@@ -6,7 +6,7 @@ import SliderLogoLeft from "../../assets/image/sliderlogo.svg";
 import DetailIcon from "../../assets/image/detail.svg";
 const Slider: React.FC = () => {
   return (
-    <section className="slider mx-auto flex flex-col md:flex-row pt-4 md:pt-8  items-start md:px-8">
+    <section className=" slide-container slider mx-auto flex flex-col md:flex-row pt-4 md:pt-8  items-start md:px-8">
       <div className="w-full md:w-1/3 mb-8 md:mb-0">
         <SliderLogoLeft className="hidden md:block logo-left slide-in-left" />
         <Image

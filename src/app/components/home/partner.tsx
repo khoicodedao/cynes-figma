@@ -15,7 +15,7 @@ const partners = [
 
 const Partner: React.FC = () => {
   return (
-    <div className="partner-container">
+    <div className="partner-container slide-in-top">
       <div className="hidden md:flex px-8 py-4 justify-between items-center">
         {partners.map((partner) => (
           <Image
