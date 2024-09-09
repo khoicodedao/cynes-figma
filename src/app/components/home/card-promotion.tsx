@@ -58,13 +58,13 @@ const CardPromotion: React.FC = () => {
 
   return (
     <div className="home-card__promotion relative">
-      <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[-1]">
+      <div className="absolute overflow-hidden top-0 left-0 w-full h-full z-[-1]">
         <LeftImage></LeftImage>
       </div>
-      <div className="hidden md:block absolute top-0 right-0 z-[-1]">
+      <div className="absolute overflow-hidden top-0 right-0 z-[-1]">
         <RightImage></RightImage>
       </div>
-      <div className=" hidden md:block absolute bottom-1/4 left-0 w-full h-full overflow-hidden z-[-1]">
+      <div className="absolute bottom-1/4 left-0 w-full h-full overflow-hidden z-[-1]">
         <BottomImage></BottomImage>
       </div>
       <div
