@@ -58,19 +58,19 @@ const CardPromotion: React.FC = () => {
 
   return (
     <div className="home-card__promotion relative">
-      <div className="absolute top-0 left-0 w-full h-full z-[-1]">
+      <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[-1]">
         <LeftImage></LeftImage>
       </div>
-      <div className="absolute top-0 right-0 z-[-1]">
+      <div className="hidden md:block absolute top-0 right-0 z-[-1]">
         <RightImage></RightImage>
       </div>
-      <div className="absolute bottom-1/4 left-0 w-full h-full z-[-1]">
+      <div className=" hidden md:block absolute bottom-1/4 left-0 w-full h-full overflow-hidden z-[-1]">
         <BottomImage></BottomImage>
       </div>
       <div
         ref={ref as React.LegacyRef<HTMLDivElement> | undefined}
-        className={` container mx-auto px-4 py-8 ${
-          isIntersecting ? "slide-in-right" : "opacity-0"
+        className={`container mx-auto px-4 py-8 ${
+          isIntersecting ? "fade-in" : "md:opacity-0"
         }`}
       >
         <h2 className="w-full mx-auto text-center text-[#2E3245] text-[32px] md:text-[48px]">
