@@ -64,6 +64,22 @@
   max-width: 1200px;
 }
 //============ Animation
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 2s ease-out forwards;
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
