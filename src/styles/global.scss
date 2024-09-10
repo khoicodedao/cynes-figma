@@ -64,7 +64,51 @@
   max-width: 1200px;
 }
 //============ Animation
+@keyframes floatLeft {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
 
+@keyframes floatRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes floatUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-left-icon {
+  animation: floatLeft 6s ease-in-out infinite;
+}
+
+.animate-right-icon1 {
+  animation: floatRight 5s ease-in-out infinite;
+}
+
+.animate-right-icon2 {
+  animation: floatUpDown 7s ease-in-out infinite;
+}
+
+.animate-right-icon3 {
+  animation: floatLeft 8s ease-in-out infinite;
+}
 @keyframes zoomIn {
   0% {
     transform: scale(0);
