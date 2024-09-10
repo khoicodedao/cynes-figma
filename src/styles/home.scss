@@ -3,3 +3,62 @@
     color: $text-default_color-hover;
   }
 }
+.trial {
+  .macbook {
+    position: relative;
+    z-index: 1;
+    top: 5px;
+  }
+  .left {
+    border-radius: 42px;
+    background: radial-gradient(
+      73.3% 67.28% at 26.99% 68.01%,
+      #19caff 0%,
+      rgba(25, 202, 255, 0) 100%
+    );
+  }
+  .elipse28 {
+    position: absolute;
+    bottom: 0;
+    left: -73px;
+    z-index: 3;
+  }
+  .elipse30 {
+    position: absolute;
+    bottom: 27px;
+    left: -55px;
+    z-index: 10;
+  }
+  .title {
+    color: var(--BG-modal, #2e3245);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px; /* 150% */
+  }
+  .description {
+    color: var(--content-content-secondary, #818798);
+
+    /* Regular/18 */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    line-height: 28px; /* 155.556% */
+  }
+  .right-icon {
+    position: absolute;
+    width: 100%;
+  }
+  .slide-in-left {
+    padding-left: 180px;
+  }
+  .background-right {
+    position: absolute;
+    width: 822px;
+    height: 441px;
+    right: 0;
+    top: 0;
+  }
+}

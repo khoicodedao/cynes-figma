@@ -54,21 +54,21 @@ const Blogs: React.FC = () => {
     >
       <div
         className={` hidden md:block w-full overflow-hidden ${
-          isIntersecting ? "slide-in-left" : "md:opacity-0"
+          isIntersecting ? "slide-in-right" : "md:opacity-0"
         }`}
       >
         <BlogPostArrow></BlogPostArrow>
       </div>
       <div
-        className={`slide-in-left block md:hidden w-full overflow-hidden ${
-          isIntersecting ? "slide-in-left" : "md:opacity-0"
+        className={`fade-in block md:hidden w-full overflow-hidden ${
+          isIntersecting ? "slide-in-right" : "md:opacity-0"
         }`}
       >
         <BlogPostArrowMobile></BlogPostArrowMobile>
       </div>
       <div
         className={`container mx-auto mt-3 px-4 ${
-          isIntersecting ? "slide-in-right" : "md:opacity-0"
+          isIntersecting ? "slide-in-left" : "md:opacity-0"
         }`}
       >
         <h2 className="text-2xl font-bold text-left mb-8">
