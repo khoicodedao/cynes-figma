@@ -54,7 +54,7 @@ const Testimonial = () => {
     triggerOnce: true,
   });
   return (
-    <section className="testimonial py-16 px-4 relative">
+    <section className="testimonial mt-16 md:mt-1 py-16 px-4 relative">
       <h2
         ref={ref as React.LegacyRef<HTMLDivElement> | undefined}
         className="title text-4xl font-bold text-center mb-12 text-gray-800"
@@ -62,7 +62,9 @@ const Testimonial = () => {
         What our customers say about us?
       </h2>
       <BgTesimonial
-        className={`bg-testimonial ${isIntersecting ? "zoom-in" : "scale-0"}`}
+        className={`hidden md:block bg-testimonial ${
+          isIntersecting ? "zoom-in" : "scale-0"
+        }`}
       />
       <Swiper
         spaceBetween={30}
