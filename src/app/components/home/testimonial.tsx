@@ -83,7 +83,7 @@ const Testimonial = () => {
             spaceBetween: 10,
           },
         }}
-        className="max-w-7xl mx-auto"
+        className={`max-w-7xl mx-auto`}
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>

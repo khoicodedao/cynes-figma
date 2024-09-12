@@ -37,7 +37,7 @@ const ContactSection: React.FC = () => {
           isIntersecting ? "animate-right-icon3" : "scale-0"
         } `}
       ></RightIcon3>
-      <div className="container mx-auto px-4">
+      <div className={`container mx-auto px-4`}>
         <div className="contact-left flex flex-col md:flex-row items-start relative">
           {/* Left Column */}
           <div className="md:w-1/2 mb-8 md:mb-0">
