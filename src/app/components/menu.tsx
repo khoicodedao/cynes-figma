@@ -14,7 +14,7 @@ const MenuComponent: React.FC = () => {
     { key: "solution", label: "Solution" },
     { key: "resource", label: "Resource" },
     { key: "partner", label: "Partner" },
-    { key: "contact", label: "Contact Us" },
+    { key: "contact-us", label: "Contact Us" },
   ];
 
   const toggleDrawer = () => {
