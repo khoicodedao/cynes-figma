@@ -4,9 +4,11 @@ import React, { useState } from "react";
 import LogoSVG from "../assets/image/logo.svg"; // Adjust the path as needed
 import Link from "next/link";
 import { Button } from "antd";
+import { usePathname } from "next/navigation";
+
 const MenuComponent: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const pathname = usePathname();
   const menuItems = [
     { key: "product", label: "Product" },
     { key: "solution", label: "Solution" },
@@ -23,13 +25,21 @@ const MenuComponent: React.FC = () => {
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <LogoSVG className="h-10 w-auto" />
+        <Link href={"/"}>
+          <LogoSVG className="h-10 w-auto" />
+        </Link>
         {/* Adjust the height as needed */}
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex md:justify-center md:items-center space-x-10">
           {menuItems.map((item) => (
-            <Link key={item.key} className="menu-link" href={`#${item.key}`}>
+            <Link
+              key={item.key}
+              className={`menu-link ${
+                pathname === `/${item.key}` ? "active-link" : ""
+              }`}
+              href={`/${item.key}`}
+            >
               {item.label}
             </Link>
           ))}

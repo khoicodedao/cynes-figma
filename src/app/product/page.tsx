@@ -1,7 +1,11 @@
-import Image from "next/image";
-
+"use client";
+import Slider from "../components/product/slider";
+import CardPromotion from "../components/product/card-promotion";
 export default function Product() {
   return (
-    <div>Product page</div>
+    <div className="product-page">
+      <Slider />
+      <CardPromotion />
+    </div>
   );
 }

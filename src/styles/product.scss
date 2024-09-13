@@ -1,0 +1,17 @@
+.product-page {
+  .slider-right-1 {
+    background-image: url(/product/slider-product-1.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 784px !important;
+  }
+  .slider-right-2 {
+    background-image: url(/product/slider-product-2.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 200px !important;
+    position: absolute;
+    bottom: 50px;
+    right: 47px;
+  }
+}
