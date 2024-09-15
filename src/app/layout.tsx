@@ -5,6 +5,9 @@ import Footer from "@/app/components/footer";
 export const metadata: Metadata = {
   title: "Cynes EDR",
   description: "EDR for everyone",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
