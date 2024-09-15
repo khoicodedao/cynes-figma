@@ -79,13 +79,13 @@ const ColorCards: React.FC = () => {
       <div
         className={`${
           isIntersecting ? "slide-in-right" : "md:opacity-0"
-        }  right-icon `}
+        }  right-icon w-full md:w-1/2 `}
       >
         <Right className="hidden md:block"></Right>
         <h2 className="text-[#2E3245] text-[32px] md:text-[48px]">
           Value benefits of using Cynes.edr
         </h2>
-        <p className="text-sm w-1/2 text-[#818798] text-justify description">
+        <p className="text-sm w-full md:w-1/2 text-[#818798] text-justify description">
           CYNES-EDR provides a range of key functions to monitor, detect, and
           respond to cybersecurity threats on connected devices (endpoints)
           within an organization's network.
