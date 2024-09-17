@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Image from "next/image";
 import Right from "@/app/assets/image/trial-right.svg";
@@ -79,11 +80,14 @@ const ColorCards: React.FC = () => {
       <div
         className={`${
           isIntersecting ? "slide-in-right" : "md:opacity-0"
-        }  right-icon w-full md:w-1/2 `}
+        }  right-icon w-full md:w-1/2 md:float-right overflow-hidden`}
       >
         <Right className="hidden md:block"></Right>
+        <RightMobile className="right-icon-mobile block md:hidden overflow-hidden"></RightMobile>
+
         <h2 className="text-[#2E3245] text-[32px] md:text-[48px]">
-          Value benefits of using Cynes.edr
+          Value benefits of using Cynes
+          <span className="text-[#19caff]">.edr</span>
         </h2>
         <p className="text-sm w-full md:w-1/2 text-[#818798] text-justify description">
           CYNES-EDR provides a range of key functions to monitor, detect, and
@@ -91,13 +95,12 @@ const ColorCards: React.FC = () => {
           within an organization's network.
         </p>
       </div>
-      <RightMobile className="right-icon-mobile block md:hidden overflow-hidden"></RightMobile>
-      <div className="pt-8 px-16 w-full grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+      <div className="container mx-auto pt-4 md:pt-8 md:px-16 w-full grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
         {colorCards.slice(0, 4).map((card, index) => (
           <ColorCard key={index} {...card} />
         ))}
       </div>
-      <div className="pt-8 px-16 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="container mx-auto pt-4 md:pt-8 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-6">
         {colorCards.slice(4, 8).map((card, index) => (
           <ColorCard key={index} {...card} />
         ))}

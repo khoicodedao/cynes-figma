@@ -23,6 +23,31 @@
     height: 700px;
   }
   .benefit {
+    height: fit-content;
+  }
+
+  .product-price {
+    background: linear-gradient(
+      19deg,
+      #daf7ff -31.27%,
+      rgba(255, 255, 255, 0) 90.87%
+    );
+    .right-icon1 {
+      top: 0;
+      right: 24%;
+    }
+    .right-icon2 {
+      top: 30%;
+      right: 50%;
+    }
+    .right-icon3 {
+      top: 80%;
+      right: 73%;
+    }
+  }
+}
+@media (min-width: 767px) {
+  .benefit {
     height: 800px;
     .right-icon {
     }
