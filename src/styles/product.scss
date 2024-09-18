@@ -45,6 +45,38 @@
       right: 73%;
     }
   }
+  .faq-section {
+    background: linear-gradient(
+      228deg,
+      #daf7ff -31.27%,
+      rgba(255, 255, 255, 0) 40.87%
+    );
+    .ant-collapse {
+      background-color: transparent;
+      border: none;
+    }
+
+    .ant-collapse-item {
+      border-bottom: 1px solid $button-border_color;
+    }
+
+    .ant-collapse-header {
+      color: $text-default_color !important;
+      font-weight: 600;
+    }
+
+    .ant-collapse-content-box {
+      color: $text-secondary_color;
+    }
+
+    .ant-collapse-arrow {
+      color: $button-border_color;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
 }
 @media (min-width: 767px) {
   .benefit {
