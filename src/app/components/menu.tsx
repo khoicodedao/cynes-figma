@@ -11,7 +11,6 @@ const MenuComponent: React.FC = () => {
   const pathname = usePathname();
   const menuItems = [
     { key: "product", label: "Product" },
-    { key: "solution", label: "Solution" },
     { key: "resource", label: "Resource" },
     { key: "partner", label: "Partner" },
     { key: "contact-us", label: "Contact Us" },
@@ -43,7 +42,12 @@ const MenuComponent: React.FC = () => {
               {item.label}
             </Link>
           ))}
-          <Link className="btn-demo" href={"#"}>
+          <Link
+            className={`${
+              pathname === `/request` ? "slider-button" : "btn-demo"
+            }`}
+            href={"/request"}
+          >
             Request Demo
           </Link>
         </nav>

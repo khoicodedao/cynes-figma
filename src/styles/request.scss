@@ -1,0 +1,30 @@
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .title {
+    color: $text-default_color;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+
+    .highlight {
+      color: $text-default_color-hover;
+    }
+  }
+
+  .description {
+    color: $text-secondary_color;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.request-page {
+  .contact-right {
+    height: fit-content;
+  }
+}
