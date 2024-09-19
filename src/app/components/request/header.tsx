@@ -1,8 +1,18 @@
 import React from "react";
+import BlogPostArrowMobile from "../../assets/image/arrow-mobile.svg";
+import BlogPostArrow from "../../assets/image/blog-post.svg";
 
 const SectionHeader: React.FC = () => {
   return (
     <div className="section-header mt-16">
+      <div className="hidden md:block w-full overflow-hidden slide-in-left">
+        <BlogPostArrow></BlogPostArrow>
+      </div>
+      <div
+        className={`fade-in block md:hidden w-full overflow-hidden slide-in-left`}
+      >
+        <BlogPostArrowMobile></BlogPostArrowMobile>
+      </div>
       <h2 className="title slide-in-left">
         Free Trial with Cynes
         <span className="highlight ">.edr</span>

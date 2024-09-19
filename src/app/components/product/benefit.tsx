@@ -95,12 +95,20 @@ const ColorCards: React.FC = () => {
           within an organization's network.
         </p>
       </div>
-      <div className="container mx-auto pt-4 md:pt-8 md:px-16 w-full grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+      <div
+        className={`container mx-auto pt-4 md:pt-8 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-6 ${
+          isIntersecting ? "slide-in-right" : "md:opacity-0"
+        }`}
+      >
         {colorCards.slice(0, 4).map((card, index) => (
           <ColorCard key={index} {...card} />
         ))}
       </div>
-      <div className="container mx-auto pt-4 md:pt-8 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div
+        className={`container mx-auto pt-4 md:pt-8 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-6 ${
+          isIntersecting ? "slide-in-right" : "md:opacity-0"
+        }`}
+      >
         {colorCards.slice(4, 8).map((card, index) => (
           <ColorCard key={index} {...card} />
         ))}

@@ -32,7 +32,7 @@ const ContactSection: React.FC = () => {
         } `}
       ></RightIcon3>
       <div className={`container mx-auto px-4`}>
-        <div className="contact-left flex flex-col md:flex-row items-start relative">
+        <div className="contact-left gap-6 flex flex-col md:flex-row items-start relative">
           {/* Left Column */}
           <div className="md:w-2/3 mb-8 md:mb-0">
             <BenefitsList />
