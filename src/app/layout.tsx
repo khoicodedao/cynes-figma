@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Cynes EDR",
   description: "EDR for everyone",
   icons: {
-    icon: "/favicon.ico",
+    icon: "favicon.ico",
   },
 };
 

@@ -37,10 +37,7 @@ const BenefitsList: React.FC = () => {
       </h2>
       <ul className="space-y-6">
         {cynesEdrBenefits.map((benefit, index) => (
-          <li
-            key={index}
-            className="benefit-item bg-white rounded-lg shadow-md p-1"
-          >
+          <li key={index} className="benefit-item bg-white rounded-lg p-1">
             <h3 className="text-[20px] text-[#2B2B32] font-semibold">
               {benefit.title}
             </h3>
