@@ -8,7 +8,7 @@ import Testimonial from "./components/home/testimonial";
 import ContactSection from "./components/home/contact-us";
 export default function Home() {
   return (
-    <div>
+    <div className="home-page">
       <Slider></Slider>
       <Partner></Partner>
       <CardPromotion></CardPromotion>

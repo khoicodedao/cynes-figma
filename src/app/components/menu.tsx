@@ -21,7 +21,7 @@ const MenuComponent: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-md">
+    <header>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href={"/"}>
@@ -104,7 +104,7 @@ const MenuComponent: React.FC = () => {
             {menuItems.map((item) => (
               <Link
                 key={item.key}
-                href={`#${item.key}`}
+                href={`${item.key}`}
                 className="block text-gray-600 hover:text-gray-900"
                 onClick={toggleDrawer}
               >
